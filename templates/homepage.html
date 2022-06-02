@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:text-align="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <script language="javascript" type="text/javascript" src="C:\Users\Dell\PycharmProjects\pythonProject\Quiz\home\process.js"></script>
+    <title>Homepage</title>
+   <style>
+    .center {
+      margin: auto;
+      width: 70%;
+      border: 3px solid #73AD21;
+      padding: 10px;
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://th.bing.com/th/id/OIP.IEZ2ThvIQWlfmdQHZVmTSwHaEP?pid=ImgDet&rs=1" alt="" width="70" height="30" class="d-inline-block align-text-top">
+      <b>Quiz</b>
+    </a>
+      <br>
+  </div>
+</nav>
+    <br>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://2o9ub0417chl2lg6m43em6psi2i-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/shutterstock_1115891669-1024x611.jpg" class="d-block w-100" alt="opps" width="720p" height="480p">
+        </div>
+     <div class="carousel-item">
+      <img src="https://www.aldingbournetrust.org/uploads/1/1/5/2/115282047/s420639347961199178_p97_i1_w1710.png" class="d-block w-100" alt="opps" width="710p" height="480p">
+    </div>
+    <div class="carousel-item">
+      <img src="https://ca.rbcwealthmanagement.com/documents/352842/352856/Quiz+time+with+artist+credit.jpg/5573bef9-ad39-4dc9-9f7f-af70d0792f58?t=1587135810026" class="d-block w-100" alt="opps" width="720p" height="480p">
+    </div>
+  </div>
+</div>
+<form action="c_quizpage" method="POST">
+    {% csrf_token %}
+    <div class="center" align="center">
+    <hr>
+    <h2>Please Enter Your Details :- </h2> <br>
+    <label for="fname">Full name:</label><br>
+    <input type="text" id="fname" name="name" required><br>
+    <label for="lname">Email:</label><br>
+    <input type="email" id="lname" name="lastname" required><br><br>
+        <input type="submit"/>
+    </div>
+
+    <div>
+        <hr><h3>There is 3 sections in this Quiz</h3>
+        <ol>
+            <li>C Programming</li>
+            <li>Data Structure</li>
+            <li>Data Base Management</li>
+        </ol>
+    </div>
+</form>
+<hr>
+</body>
+</html>
